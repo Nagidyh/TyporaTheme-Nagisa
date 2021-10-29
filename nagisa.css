@@ -224,18 +224,19 @@ h3.md-focus:before, h4.md-focus:before, h5.md-focus:before, h6.md-focus:before {
 h1 {
     font-size: 1.6rem;
     margin-top: 0;
-    padding-left: 24px;
+    padding-left: 16px;
     padding-bottom: 8px;
     border-bottom: 1px dashed #ddd;
     /* color: #737373; */
 }
 
 h1::after {
+    font-size: 1.5rem;
     content: "#";
     left:0;
     position: absolute;
-    color: #737373;
-    /* color: #ff6d6d; */
+    /* color: #737373; */
+    color: #ff6d6d;
 }
 
 h2.md-end-block.md-heading {
