@@ -235,7 +235,9 @@ h1 {
 h2.md-end-block.md-heading {
     font-size: 1.6rem;
     padding-left: 1.175rem;
-    display: inline-block;
+    padding-bottom: 5px;
+    border-bottom: 1px dashed #ddd;
+    display: block;
 }
 h2.md-end-block.md-heading::before {
     content:"#";
@@ -244,17 +246,18 @@ h2.md-end-block.md-heading::before {
     color: #ff6d6d;
 }
 
-h2.md-end-block.md-heading:after {
+h3.md-end-block.md-heading {
+    font-size: 1.4rem;
+    display: inline-block;
+}
+
+h3.md-end-block.md-heading::after {
     display: block;
     content: '';
-    height: 2px;
+    height: 1px;
     margin-top: 4px;
     background-color: var(--h2-underline-color);
     border-radius: 2px;
-}
-
-h3 {
-    font-size: 1.4rem;
 }
 
 h4 {
