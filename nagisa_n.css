@@ -215,7 +215,7 @@ h5,
 h6 {
     font-family: var(--title-font);
     position: relative;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     margin-bottom: 1rem;
     font-weight: bold;
     cursor: text;
@@ -246,21 +246,42 @@ h2.md-end-block.md-heading::before {
     color: #ff6d6d;
 }
 
-h3.md-end-block.md-heading {
-    font-size: 1.4rem;
+h3 {
+    font-size: 1.5rem;
     display: inline-block;
 }
+h3::before {
+    display: block;
+    content: " ";
+    height: 80px;
+    margin-top: -80px;
+    visibility: hidden;
+}
 
-h3.md-end-block.md-heading::after {
+h3::after {
     display: block;
     content: '';
     height: 1px;
-    margin-top: 4px;
+    margin-top: 2px;
     background-color: var(--h2-underline-color);
     border-radius: 2px;
 }
+h4::before {
+    display: block;
+    content: " ";
+    height: 80px;
+    margin-top: -80px;
+    visibility: hidden;
+}
+h4::after {
+    content: "▌";
+    left: 0px;
+    position: absolute;
+    color: rgb(255, 109, 109);
+}
 
 h4 {
+    padding-left: 15px;
     font-size: 1.2rem;
 }
 
