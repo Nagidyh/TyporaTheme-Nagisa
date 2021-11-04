@@ -276,7 +276,7 @@ h3::after {
     
 }
 
-h4::before {
+h4::after {
     display: block;
     content: " ";
     height: 80px;
@@ -292,11 +292,12 @@ h4 {
     padding-left: 15px;
     font-size: 1.2rem;
 }
-h4::after {
+h4::before {
     content: "▌";
     left: 0px;
     position: absolute;
     color: rgb(255, 109, 109);
+    
 }
 
 
