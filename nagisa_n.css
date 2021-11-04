@@ -239,13 +239,18 @@ h2 {
     border-bottom: 1px dashed #ddd;
     display: block;
 }
+
 h2::before {
     content:"#";
     left: 0;
     position: absolute;
     color: #ff6d6d;
 }
-h2::after {
+
+
+/*
+
+h3::before {
     display: block;
     content: " ";
     height: 80px;
@@ -253,11 +258,7 @@ h2::after {
     visibility: hidden;
 }
 
-h3 {
-    font-size: 1.5rem;
-    display: inline-block;
-}
-h3::before {
+h2::after {
     display: block;
     content: " ";
     height: 80px;
@@ -273,7 +274,11 @@ h3::after {
     background-color: var(--h2-underline-color);
     border-radius: 2px;
 }
+*/
 
+h3 {
+    font-size: 1.5rem;
+}
 h4 {
     padding-left: 15px;
     font-size: 1.2rem;
