@@ -273,6 +273,15 @@ h3::after {
     margin-top: 2px;
     background-color: var(--h2-underline-color);
     border-radius: 2px;
+    
+}
+
+h4::before {
+    display: block;
+    content: " ";
+    height: 80px;
+    margin-top: -80px;
+    visibility: hidden;
 }
 */
 
@@ -288,13 +297,6 @@ h4::after {
     left: 0px;
     position: absolute;
     color: rgb(255, 109, 109);
-}
-h4::before {
-    display: block;
-    content: " ";
-    height: 80px;
-    margin-top: -80px;
-    visibility: hidden;
 }
 
 
